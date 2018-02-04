@@ -54,7 +54,7 @@
 			top: 45%;
 			margin-top: -1rem;
 			margin-left: -11rem;
-			
+
 			font-weight: 200;
 			color: #fff;
 			opacity: 0.65;
@@ -116,6 +116,8 @@
 
 }
 	</style>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
 </head>
 <body>
 	<div id="welcome">
@@ -173,7 +175,7 @@
         Dot Creation
     *******************/
 
-    /* Differentiate dot counts based on roughly-guestimated device and browser capabilities. */ 
+    /* Differentiate dot counts based on roughly-guestimated device and browser capabilities. */
 	var dotsCount,
 		dotsHtml = "",
 		$dots;
@@ -253,8 +255,8 @@ else
 
 	/* Animate the dots. */
 	$dots
-		.velocity({ 
-			translateX: [ 
+		.velocity({
+			translateX: [
 				function() { return "+=" + r(-screenWidth/2.5, screenWidth/2.5) },
 				function() { return r(0, screenWidth) }
 			],
@@ -266,14 +268,14 @@ else
 				function() { return "+=" + r(translateZMin, translateZMax) },
 				function() { return r(translateZMin, translateZMax) }
 			],
-			opacity: [ 
+			opacity: [
 				function() { return Math.random() },
 				function() { return Math.random() + 0.1 }
 			]
 		}, { duration: 6000 })
-		.velocity({ opacity: 0 }, { duration: 2000, complete: function() { 
+		.velocity({ opacity: 0 }, { duration: 2000, complete: function() {
 			$welcome
-				.html("<a href='is.html'>Know more about me.</a><br /><br /><br />Sincerely, <a href='http://twitter.com/darshanbaid22'>@darshanbaid22</a>")
+				.html("<a href='is.html'>Know more about me.</a><br /><br /><br />Sincerely, <a href='http://twitter.com/darshanbaid22'>@darshanbaid22</a><br /><br /> <br /><a href='https://instagram.com/darshanbaid22'>Instagram</a> | <a href='https://github.com/frunkad'>GitHub</a> | <a href='https://www.codechef.com/users/frunkad'>CodeChef</a> | <a href='https://www.hackerearth.com/@darshan157'>HackerEarth</a>")
 				.velocity({ opacity: 0.75 }, { duration: 3500, display: "block" })
 				.find("*").add($welcome).css("pointer-events", "auto");
 			}
