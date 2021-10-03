@@ -1,1 +1,1 @@
-Github repo for https://darshan.ninja
+Github Repo for https://darshan.ninja
